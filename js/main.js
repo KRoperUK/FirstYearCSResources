@@ -1,5 +1,6 @@
 const y1s2_assessment_data = "data/y1s2_sa.csv";
 const y2s1_assessment_data = "data/y2s1_sa.csv";
+const y2s2_assessment_data = "data/y2s2_sa.csv";
 const myDate = new Date();
 
 /**
@@ -141,6 +142,9 @@ buildTable(y1s2_data, "y1s2-table");
 
 y2s1_data = loadFile(y2s1_assessment_data);
 buildTable(y2s1_data, "y2s1-table");
+
+y2s2_data = loadFile(y2s2_assessment_data);
+buildTable(y2s2_data, "y2s2-table");
 
 document.querySelectorAll("table th").forEach(headerCell => {
   headerCell.addEventListener("click", () => {
